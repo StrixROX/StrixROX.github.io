@@ -5,6 +5,7 @@ import { faDribbble, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-i
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import Image from 'next/image'
+import Accordion from './components/Accordion'
 
 const stylesjoin = (...args) => args.join(" ")
 
@@ -42,6 +43,14 @@ export default function Home() {
         <div className={styles.pfp}>
           <Image src="/images/pratyush.jpg" alt="Pratyush Kumar" loading="lazy" fill={true} objectFit="cover"></Image>
         </div>
+        <main>
+          <Accordion title="EDU">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur atque aliquam expedita aliquid eaque et sunt doloribus reiciendis nihil qui eveniet, animi quasi necessitatibus facere? Nulla architecto dolor provident doloribus facere debitis sint ipsa recusandae fugit illum ratione, totam voluptas quasi facilis veniam similique assumenda reiciendis non inventore a distinctio! Iure eius dolor, ut quasi nemo praesentium sed mollitia perspiciatis, alias dolore a culpa pariatur. Officia perferendis exercitationem nobis esse iste quis eos minus saepe modi, recusandae omnis, accusamus dolorum ab eveniet praesentium laboriosam amet illo, natus assumenda a dicta doloribus maxime? Optio dolores perferendis cum, accusamus nobis asperiores.</div>
+          </Accordion>
+          <Accordion title="ABT">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur atque aliquam expedita aliquid eaque et sunt doloribus reiciendis nihil qui eveniet, animi quasi necessitatibus facere? Nulla architecto dolor provident doloribus facere debitis sint ipsa recusandae fugit illum ratione, totam voluptas quasi facilis veniam similique assumenda reiciendis non inventore a distinctio! Iure eius dolor, ut quasi nemo praesentium sed mollitia perspiciatis, alias dolore a culpa pariatur. Officia perferendis exercitationem nobis esse iste quis eos minus saepe modi, recusandae omnis, accusamus dolorum ab eveniet praesentium laboriosam amet illo, natus assumenda a dicta doloribus maxime? Optio dolores perferendis cum, accusamus nobis asperiores.</div>
+          </Accordion>
+        </main>
       </div>
     </>
   )
