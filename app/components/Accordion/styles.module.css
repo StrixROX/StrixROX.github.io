@@ -1,11 +1,3 @@
-.componentWrapper {
-  cursor: pointer;
-}
-
-
-
-
-
 .accordion {
   display: grid;
   grid-template-rows: 0fr;
@@ -30,6 +22,7 @@
   font-family: "Josefin Sans";
   font-size: 1.2rem;
   transition: color 0.1s;
+  cursor: pointer;
 }
 .toggleShow {
   float: right;

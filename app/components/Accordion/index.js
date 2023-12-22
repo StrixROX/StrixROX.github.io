@@ -17,7 +17,7 @@ export default function Accordion({ children, defaultShow, title }) {
   }
 
   return (
-    <div className={styles.componentWrapper}>
+    <>
       <div className={styles.title} onClick={() => toggleShow()}>
         <span>{title}</span>
         <FontAwesomeIcon
@@ -30,6 +30,6 @@ export default function Accordion({ children, defaultShow, title }) {
           {children}
         </div>
       </div>
-    </div>
+    </>
   )
 }
