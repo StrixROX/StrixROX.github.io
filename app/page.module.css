@@ -1,0 +1,57 @@
+.pageWrapper {
+  margin: auto;
+  padding: 5% 15%;
+  max-width: 600px;
+  box-sizing: content-box;
+}
+
+
+
+
+
+
+.myName {
+  margin: 0;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+.links {
+  display: inline-flex;
+  margin: 2.5rem 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+
+.socials > .icon {
+  width: 1.5rem;
+  color: white;
+}
+
+.links > .resume {
+  padding: 0.6rem 1.8rem;
+  padding-top: 0.62rem;
+  color: #1f1f1f;
+  font-family: "Josefin Sans";
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #d6d6d6;
+  border-radius: 100px;
+}
