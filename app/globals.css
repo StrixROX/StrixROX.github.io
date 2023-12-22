@@ -5,7 +5,7 @@ body {
   font-family: Poppins;
   font-weight: 400;
   background-color: #1a1a1aff;
-  background-image: url('/assets/noise.png');
+  background-image: url('/images/noise.png');
 }
 body::before {
   content: '';
@@ -15,7 +15,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/assets/highlight.png');
+  background-image: url('/images/highlight.png');
   background-repeat: no-repeat;
   z-index: -1;
 }
