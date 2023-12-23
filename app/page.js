@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </header>
         <div className={styles.pfp}>
-          <Image src="/images/pratyush.jpg" alt="Pratyush Kumar" loading="lazy" fill={true} objectFit="cover"></Image>
+          <Image src="/images/pratyush.jpg" alt="Pratyush Kumar" fill={true} sizes="(max-width: 600px) 70vw, 600px" priority={true} style={{ objectFit: "cover" }}></Image>
         </div>
         <main>
           <Accordion title="EDU">
@@ -58,7 +58,11 @@ export default function Home() {
             </dl>
           </Accordion>
           <Accordion title="ABT" defaultShow={true}>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur atque aliquam expedita aliquid eaque et sunt doloribus reiciendis nihil qui eveniet, animi quasi necessitatibus facere? Nulla architecto dolor provident doloribus facere debitis sint ipsa recusandae fugit illum ratione, totam voluptas quasi facilis veniam similique assumenda reiciendis non inventore a distinctio! Iure eius dolor, ut quasi nemo praesentium sed mollitia perspiciatis, alias dolore a culpa pariatur. Officia perferendis exercitationem nobis esse iste quis eos minus saepe modi, recusandae omnis, accusamus dolorum ab eveniet praesentium laboriosam amet illo, natus assumenda a dicta doloribus maxime? Optio dolores perferendis cum, accusamus nobis asperiores.</div>
+            <div className={styles.abtContainer}>
+              <p>I am Pratyush Kumar, a final-year B.Tech. student at the Indian Institute of Technology (IIT), Patna, India. I am currently pursuing my Bachelor's in Mechanical Engineering and actively looking for full-time work opportunities as a Web Developer.</p>
+
+              <p>I have worked with various frontend and backend technologies like NodeJS, ReactJS, MongoDB, REST APIs, Linux, and Python over the last 4+ years, complemented by my UI/UX design sensibilities. I have a keen eye for visual detail and am passionate about web development. I have also worked as a web development team lead for various events held at my institute including TEDxIITPatna'22.</p>
+            </div>
           </Accordion>
         </main>
       </div>
