@@ -64,6 +64,36 @@ export default function Home() {
               <p>I have worked with various frontend and backend technologies like NodeJS, ReactJS, MongoDB, REST APIs, Linux, and Python over the last 4+ years, complemented by my UI/UX design sensibilities. I have a keen eye for visual detail and am passionate about web development. I have also worked as a web development team lead for various events held at my institute including TEDxIITPatna'22.</p>
             </div>
           </Accordion>
+          <Accordion title="SKL" defaultShow={true}>
+            <div className={styles.sklContainer}>
+              Languages <ul>
+                <li>JavaScript</li>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+              Development Technologies <ul>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>REST APIs</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Vue.js</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Linux</li>
+                <li>SQLite</li>
+                <li>TailwindCSS</li>
+                <li>SCSS/Sass</li>
+                <li>Websockets</li>
+              </ul>
+              Degree Courses <ul>
+                <li>Python Programming</li>
+                <li>Data Science</li>
+              </ul>
+            </div>
+          </Accordion>
         </main>
       </div>
     </>
