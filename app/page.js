@@ -45,9 +45,19 @@ export default function Home() {
         </div>
         <main>
           <Accordion title="EDU">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur atque aliquam expedita aliquid eaque et sunt doloribus reiciendis nihil qui eveniet, animi quasi necessitatibus facere? Nulla architecto dolor provident doloribus facere debitis sint ipsa recusandae fugit illum ratione, totam voluptas quasi facilis veniam similique assumenda reiciendis non inventore a distinctio! Iure eius dolor, ut quasi nemo praesentium sed mollitia perspiciatis, alias dolore a culpa pariatur. Officia perferendis exercitationem nobis esse iste quis eos minus saepe modi, recusandae omnis, accusamus dolorum ab eveniet praesentium laboriosam amet illo, natus assumenda a dicta doloribus maxime? Optio dolores perferendis cum, accusamus nobis asperiores.</div>
+            <dl className={styles.eduContainer}>
+              <dt>Indian Institute of Technology Patna</dt>
+              <dd>
+                <span>Bachelor of Technology</span>
+                <span>Mechanical Engineering (CPI: 8.53)</span>
+                <span style={{ textAlign: 'right' }}>Bihar, India</span>
+                <span style={{ textAlign: 'right' }}>
+                  <time dateTime="2020-05">May 2020</time> - <time dateTime="2024-05">May 2024</time>
+                </span>
+              </dd>
+            </dl>
           </Accordion>
-          <Accordion title="ABT">
+          <Accordion title="ABT" defaultShow={true}>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur atque aliquam expedita aliquid eaque et sunt doloribus reiciendis nihil qui eveniet, animi quasi necessitatibus facere? Nulla architecto dolor provident doloribus facere debitis sint ipsa recusandae fugit illum ratione, totam voluptas quasi facilis veniam similique assumenda reiciendis non inventore a distinctio! Iure eius dolor, ut quasi nemo praesentium sed mollitia perspiciatis, alias dolore a culpa pariatur. Officia perferendis exercitationem nobis esse iste quis eos minus saepe modi, recusandae omnis, accusamus dolorum ab eveniet praesentium laboriosam amet illo, natus assumenda a dicta doloribus maxime? Optio dolores perferendis cum, accusamus nobis asperiores.</div>
           </Accordion>
         </main>
