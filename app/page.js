@@ -1,4 +1,5 @@
 import styles from './page.module.css'
+import projects from './projects.json'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDribbble, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -6,6 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import Image from 'next/image'
 import Accordion from './components/Accordion'
+import ProjectCard from './components/ProjectCard'
 
 const stylesjoin = (...args) => args.join(" ")
 
@@ -44,7 +46,7 @@ export default function Home() {
           <Image src="/images/pratyush.jpg" alt="Pratyush Kumar" fill={true} sizes="(max-width: 600px) 70vw, 600px" priority={true} style={{ objectFit: "cover" }}></Image>
         </div>
         <main>
-          <Accordion title="EDU">
+          <Accordion title="EDU" defaultShow={true}>
             <dl className={styles.eduContainer}>
               <dt>Indian Institute of Technology Patna</dt>
               <dd>
@@ -63,6 +65,21 @@ export default function Home() {
 
               <p>I have worked with various frontend and backend technologies like NodeJS, ReactJS, MongoDB, REST APIs, Linux, and Python over the last 4+ years, complemented by my UI/UX design sensibilities. I have a keen eye for visual detail and am passionate about web development. I have also worked as a web development team lead for various events held at my institute including TEDxIITPatna'22.</p>
             </div>
+          </Accordion>
+          <Accordion title="PJT" defaultShow={true}>
+            {projects.map((el, i) => {
+              return (
+                <ProjectCard
+                  index={i+1}
+                  title={el.title}
+                  thumbnailSrc={el.thumbnailSrc}
+                  thumbnailPosition={el.thumbnailPosition ?? "center top"}
+                  githubLink={el.githubLink}
+                  previewLink={el.previewLink}
+                  key={i}
+                />
+              )
+            })}
           </Accordion>
           <Accordion title="SKL" defaultShow={true}>
             <div className={styles.sklContainer}>

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "DAQ Platform",
+    "thumbnailSrc": "/images/projects/daq-platform-1.jpg",
+    "thumbnailPosition": "center top",
+    "githubLink": "https://github.com/StrixROX/DAQ-Platform",
+    "previewLink": "https://daq-platform.vercel.app"
+  },
+  {
+    "title": "JSON Form Generator",
+    "thumbnailSrc": "/images/projects/json-form-generator-1.png",
+    "githubLink": "https://github.com/StrixROX/JSON-Form-Generator",
+    "previewLink": "https://json-form-generator.vercel.app"
+  },
+  {
+    "title": "TEDxIITPatna '22 Website",
+    "thumbnailSrc": "/images/projects/tedx-iitp-1.png",
+    "thumbnailPosition": "center center",
+    "githubLink": "https://github.com/StrixROX/TEDxIITPatna-2k22",
+    "previewLink": "https://tedx-iit-patna-2k22.vercel.app"
+  },
+  {
+    "title": "Node App Creator",
+    "thumbnailSrc": "/images/projects/node-app-creator-1.jpg",
+    "githubLink": "https://github.com/StrixROX/Node-App-Creator",
+    "previewLink": "https://nodeappcreator.onrender.com/"
+  }
+]

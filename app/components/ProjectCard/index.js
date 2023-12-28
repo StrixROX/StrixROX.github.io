@@ -21,13 +21,13 @@ function zeroPadding(num, len) {
   return num
 }
 
-export default function ProjectCard({ index, title, thumbnailSrc, githubLink, previewLink }) {
+export default function ProjectCard({ index, title, thumbnailSrc, thumbnailPosition, githubLink, previewLink }) {
   return (
     <div className={styles.projectCard}>
       <h1 className={styles.index}>/{zeroPadding(index, 2)}</h1>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.thumbnail}>
-        <Image src={thumbnailSrc} alt={title} fill={true} sizes="(max-width: 600px) 70vw, 600px" priority={true} style={{ objectFit: "cover", objectPosition: "center top" }}></Image>
+        <Image src={thumbnailSrc} alt={title} fill={true} sizes="(max-width: 600px) 70vw, 600px" priority={true} style={{ objectFit: "cover", objectPosition: (thumbnailPosition ?? "center top") }}></Image>
       </div>
       <div className={styles.links}>
         <div className={stylesjoin(styles.icon, styles.github)}>
