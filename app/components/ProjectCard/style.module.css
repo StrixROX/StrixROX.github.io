@@ -1,0 +1,39 @@
+.projectCard + .projectCard {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #4d4d4d;
+}
+
+.index,
+.title {
+  margin: 0;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.index {
+  font-size: 1.1rem;
+}
+
+.links {
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+
+.links > .icon {
+  font-size: 1.2rem;
+  color: #c7c7c7;
+}
+
+.thumbnail {
+  position: relative;
+  margin: 1rem 0;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+}
